@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { AppProvider } from './contexts/AppContext';
-import { ThreeJSBackground } from './components/layout/ThreeJSBackground';
 import { CrisisHotlineBanner } from './components/layout/CrisisHotlineBanner';
 import { Header } from './components/layout/Header';
 import { LoginModal } from './components/auth/LoginModal';
@@ -24,8 +23,7 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <AppProvider>
         <Router>
-          <div className="min-h-screen bg-background">
-            <ThreeJSBackground />
+          <div className="min-h-screen bg-gray-50">
             <CrisisHotlineBanner />
             <Header />
             <LoginModal isOpen={showLoginModal} onClose={() => setShowLoginModal(false)} />

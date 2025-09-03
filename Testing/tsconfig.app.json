@@ -14,11 +14,6 @@
     "noEmit": true,
     "jsx": "react-jsx",
 
-    /* Interop and types */
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "types": ["vite/client", "react", "react-dom"],
-
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
